@@ -11,11 +11,11 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS Users
 # connection.close()
 
 # cursor.execute("insert into Users values ('1', 'Luke', 'Lopez', 'luke.lopez@gmail.com')")
-userAdds = [('2', 'Matt', 'Finkel', 'matt.finks@hotmail.com'),
-('3', 'Ang', 'Borikar', 'ang.bobo@gmail.com'),
-('4', 'Matan', 'Shamir', 'matan@wiki.com'),
-('5', 'Carrie', 'Lyman', 'carrie@lymandesigns.co')]
-cursor.executemany('insert into Users Values (?,?,?,?)', userAdds)
+# userAdds = [('2', 'Matt', 'Finkel', 'matt.finks@hotmail.com'),
+# ('3', 'Ang', 'Borikar', 'ang.bobo@gmail.com'),
+# ('4', 'Matan', 'Shamir', 'matan@wiki.com'),
+# ('5', 'Carrie', 'Lyman', 'carrie@lymandesigns.co')]
+# cursor.executemany('insert into Users Values (?,?,?,?)', userAdds)
 
 users = cursor.execute("select Email_Address from Users")
 for user in users:
